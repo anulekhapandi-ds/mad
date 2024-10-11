@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+     /* Black background for the entire page */
+    background-image: url('/static/images/background.jpg');
+    background-position: center;
+    color: white; /* White text color for all text */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align items to the top */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding to the body */
+    flex-direction: column;
+    height: 100vh; /* Ensure full height of the viewport */
+}
+
+/* Login Container Styles */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for the container */
+    width: 300px; /* Fixed width for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center; /* Center align heading */
+    margin: 0 0 20px; /* Remove margin above and add space below */
+}
+
+/* Label Styles */
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Margins for spacing */
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+    width: 90%; /* Full width for input fields */
+    padding: 10px; /* Padding for input fields */
+    margin: 5px 5px 15px; /* Margin for spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for inputs */
+    color: white; /* White text color for inputs */
+}
+
+/* Button Styles */
+button {
+
+    padding: 10px; /* Padding for button */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect on hover */
+}
+
+.button-row {
+    display: flex; 
+    justify-content: center; /* Center buttons */
+    margin-top: 30px; /* Space above button row */
+    gap: 20px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Signup Link Styles */
+.signup-link {
+    display: block; /* Block display for link */
+    text-align: center; /* Center align link */
+    margin-top: 10px; /* Margin for spacing above the link */
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Professional Login</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Customer Login</h1>
+        <form action="/customer/dashboard" method="POST"> <!-- Update the action URL as needed -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            
+            <button type="submit">Login</button>
+        </form>
+        <a href="/customer/register" class="signup-link">Don't have an account? Sign up here</a> <!-- Link to sign-up page -->
+    </div>
+
+</body>
+</html>

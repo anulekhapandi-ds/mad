@@ -1,7 +1,10 @@
 from flask import Flask, render_template,request, redirect, url_for, flash
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///services.db'  # Database file
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Suppress warnings
+db = SQLAlchemy(app)
 
 @app.route('/')
 def home():
